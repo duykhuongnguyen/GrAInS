@@ -68,7 +68,7 @@ bash scripts/llm/run_token_ablation.sh
 
 Hidden states will be saved to: `src/data/llm/hidden_states/`
 
-#### 2. Steering for Multiple-Choice Question Tasks
+#### 2. Steering for Multiple-Choice QA Tasks
 
 ```bash
 bash scripts/llm/run_steering_mc.sh
@@ -98,7 +98,7 @@ bash scripts/vlm/run_token_ablation_vlm.sh
 
 Results will be saved to: `src/data/vlm/hidden_states/`
 
-#### 2. Steering for Multiple-Choice Question Tasks
+#### 2. Steering for Multiple-Choice QA Tasks
 
 ```bash
 bash scripts/vlm/run_steering_mc_vlm.sh
