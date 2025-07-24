@@ -6,7 +6,7 @@
 [Duy Nguyen](https://duykhuongnguyen.github.io/), [Archiki Prasad](https://archiki.github.io/), [Elias Stengel-Eskin](https://esteng.github.io/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
 This repository contains the implementation of our paper:  
-**GrAInS: Gradient-based Attribution for Inference-Time Steering for LLMs and VLMs.**
+**GrAInS: Gradient-based Attribution for Inference-Time Steering of LLMs and VLMs.**
 
 ---
 
