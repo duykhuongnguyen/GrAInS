@@ -6,7 +6,7 @@
 [Duy Nguyen](https://duykhuongnguyen.github.io/), [Archiki Prasad](https://archiki.github.io/), [Elias Stengel-Eskin](https://esteng.github.io/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
 This repository contains the implementation of our paper:  
-**GrAInS: Gradient-based Attribution for Inference-Time Steering of LLMs and VLMs.**
+[**GrAInS: Gradient-based Attribution for Inference-Time Steering of LLMs and VLMs.**](https://arxiv.org/abs/2507.18043)
 
 ---
 
@@ -51,7 +51,7 @@ GrAInS/
 
 ## ⚙️ Running GrAInS
 
-All scripts and code should be run from the `src/` directory. Example bash scripts are provided in `src/scripts/` for both LLM and VLM setups.
+All scripts and code should be run from the `src/` directory. Example bash scripts are provided in `src/scripts/` for both LLM and VLM setups. Note that before running experiments, you might need to reformat the prompt for multiple-choice QA or generation tasks using the prompts provided in `utils/config.py`.
 
 ---
 
@@ -68,21 +68,21 @@ bash scripts/llm/run_token_ablation.sh
 
 Hidden states will be saved to: `src/data/llm/hidden_states/`
 
-#### 2. Steering for Multiple-Choice QA Tasks
-
-```bash
-bash scripts/llm/run_steering_mc.sh
-```
-
-Results will be saved to: `src/results/llm/steering/`
-
-#### 3. Steering for Generation Tasks
+#### 2. Steering for Generation Tasks
 
 ```bash
 bash scripts/llm/run_steering_generation.sh
 ```
 
 Results will be saved to: `src/results/llm/steering_generation/`
+
+#### 3. Steering for Multiple-Choice QA Tasks
+
+```bash
+bash scripts/llm/run_steering_mc.sh
+```
+
+Results will be saved to: `src/results/llm/steering/`
 
 ---
 
@@ -98,21 +98,21 @@ bash scripts/vlm/run_token_ablation_vlm.sh
 
 Results will be saved to: `src/data/vlm/hidden_states/`
 
-#### 2. Steering for Multiple-Choice QA Tasks
-
-```bash
-bash scripts/vlm/run_steering_mc_vlm.sh
-```
-
-Results will be saved to: `src/results/vlm/steering/`
-
-#### 3. Steering for Generation Tasks
+#### 2. Steering for Generation Tasks
 
 ```bash
 bash scripts/vlm/run_steering_generation_vlm.sh
 ```
 
 Results will be saved to: `src/results/vlm/steering_generation/`
+
+#### 3. Steering for Multiple-Choice QA Tasks
+
+```bash
+bash scripts/vlm/run_steering_mc_vlm.sh
+```
+
+Results will be saved to: `src/results/vlm/steering/`
 
 ---
 
@@ -121,4 +121,13 @@ Results will be saved to: `src/results/vlm/steering_generation/`
 If you find this work useful, please consider citing:
 
 ```
+@misc{nguyen2025grainsgradientbasedattributioninferencetime,
+      title={GrAInS: Gradient-based Attribution for Inference-Time Steering of LLMs and VLMs}, 
+      author={Duy Nguyen and Archiki Prasad and Elias Stengel-Eskin and Mohit Bansal},
+      year={2025},
+      eprint={2507.18043},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.18043}, 
+}
 ```

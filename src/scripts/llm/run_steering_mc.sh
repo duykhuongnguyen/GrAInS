@@ -10,7 +10,7 @@ SPLIT="validation"
 NUM_SAMPLES_STEER=50
 ATTRIBUTION="contrastive"
 GRAD_METHOD="integrated_gradients"  # vanilla 
-K=3
+K=10
 
 # Paths to hidden states
 HIDDEN_STATES_PATH="data/llm/hidden_states/hidden_states_${DATASET_NAME}_${MODEL_NAME}_${NUM_SAMPLES_STEER}_${ATTRIBUTION}_${K}_pos_${GRAD_METHOD}.npz"

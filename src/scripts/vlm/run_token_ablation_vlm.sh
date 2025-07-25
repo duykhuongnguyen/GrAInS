@@ -11,7 +11,7 @@ OUTPUT_DIR_META="results/vlm/token_attribution"
 OUTPUT_DIR_HIDDEN="data/vlm/hidden_states"
 
 # Parameters
-TOP_K_VALUES=(20)
+TOP_K_VALUES=(50)
 TOP_VALUES=("pos" "neg")
 
 # Create output directories if they don't exist
